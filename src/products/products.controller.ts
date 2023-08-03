@@ -10,10 +10,10 @@ export class ProductsController {
     return await this.productsService.getAllProducts();
   }
 
-  @Get(':id')
-  async getProduct(@Param() params: any): Promise<any> {
-    console.log('id', params.id);
+  // @Get(':id')
+  // async getProduct(@Param() params: any): Promise<any> {
+  //   console.log('id', params.id);
 
-    return await this.productsService.getProduct(params.id);
-  }
+  //   return await this.productsService.getProduct(params.id);
+  // }
 }
